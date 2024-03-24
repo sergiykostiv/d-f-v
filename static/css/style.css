@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -47,8 +48,36 @@ body {
   line-height: 32px;
 }
 
+.box-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
 .page-descr {
   line-height: 24px;
+}
+
+.breadcrumb {
+  font-size: 16px;
+  padding: 15px;
+}
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+}
+.breadcrumb__item {
+  position: relative;
+}
+.breadcrumb__item:not(:last-child)::after {
+  margin: 0 0.25rem;
+  content: "〉";
+}
+.breadcrumb__item:not(:last-child):hover {
+  color: #d9d9d9;
+}
+.breadcrumb__link {
+  text-decoration: underline;
 }
 
 .container {
@@ -57,16 +86,15 @@ body {
 }
 
 .main {
-  background: #72764d;
+  background: #7d8064;
   min-height: 100vh;
   padding: 10px;
+  display: flex;
+  align-items: center;
 }
 .main__wrapper {
   display: flex;
   justify-content: space-between;
-}
-.main__title {
-  margin-bottom: 20px;
 }
 .main__decoration-img {
   max-width: 100%;
@@ -85,18 +113,73 @@ body {
   text-align: center;
   border: solid 1px #fff;
   border-radius: 20px;
-  padding: 20px;
+  padding: 15px;
   transition: all 0.3s;
 }
 .main__button-link:hover {
   width: 80%;
   background-color: #fff;
-  color: #72764d;
+  color: #7d8064;
 }
 
-@media (width <= 1020px) {
+.main-reports {
+  display: block;
+}
+
+.reports {
+  padding: 40px 20px;
+}
+.reports__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 3fr);
+  gap: 20px;
+}
+.reports__item {
+  padding: 10px 15px 25px;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+.reports__item-photo {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1020px) {
   .main__wrapper {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
+  }
+  .main__text {
+    align-items: center;
+    gap: 20px;
+  }
+  .main__title {
+    margin-bottom: 20px;
+  }
+  .main__button {
+    width: 100%;
+  }
+  .main__button-link {
+    width: 100%;
+  }
+  .main__button-link:hover {
+    width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  .reports {
+    padding: 20px 10px;
+  }
+  .reports__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .reports__item-decription, .reports__item-btn {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

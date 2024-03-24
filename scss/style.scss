@@ -11,14 +11,12 @@
   background: $main-color;
   min-height: 100vh;
   padding: 10px;
+  display: flex;
+  align-items: center;
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__title {
-    margin-bottom: 20px;
   }
 
   &__decoration-img {
@@ -40,7 +38,7 @@
     text-align: center;
     border: solid 1px $white;
     border-radius: 20px;
-    padding: 20px;
+    padding: 15px;
     transition: all 0.3s;
 
     &:hover {
@@ -48,6 +46,36 @@
       background-color: $white;
       color: $main-color;
     }
+  }
+}
+
+.main-reports {
+  display: block;
+}
+
+.reports {
+  padding: 40px 20px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    gap: 20px;
+  }
+
+  &__item {
+    padding: 10px 15px 25px;
+    border: solid 1px $white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  &__item-photo {
+    width: 100%;
+    height: auto;
   }
 }
 
