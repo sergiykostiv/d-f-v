@@ -1,0 +1,8 @@
+@media (width <= 1020px) {
+  .main {
+    &__wrapper {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
