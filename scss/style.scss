@@ -11,8 +11,6 @@
   background: $main-color;
   min-height: 100vh;
   padding: 10px;
-  display: flex;
-  align-items: center;
 
   &__wrapper {
     display: flex;
@@ -53,6 +51,11 @@
   display: block;
 }
 
+.main-index {
+  display: flex;
+  align-items: center;
+}
+
 .reports {
   padding: 40px 20px;
 
@@ -76,6 +79,64 @@
   &__item-photo {
     width: 100%;
     height: auto;
+  }
+}
+
+.first-rp {
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__table {
+    overflow: auto;
+    width: 50%;
+  }
+
+  &__table-title {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  &__table-descr {
+    margin-bottom: 20px;
+  }
+
+  &__slider {
+    width: 50%;
+  }
+
+  &__slider-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.table {
+  &__caption {
+    caption-side: top;
+    padding-bottom: 10px;
+    font-weight: 600;
+    // text-align: left;
+  }
+
+  & table {
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+  }
+
+  & th,
+  & td {
+    color: $white;
+    padding: 5px;
+  }
+
+  & td:last-child {
+    font-weight: 600;
   }
 }
 
