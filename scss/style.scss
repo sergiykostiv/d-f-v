@@ -83,6 +83,8 @@
 }
 
 .first-rp {
+  padding: 20px 0;
+
   &__wrapper {
     display: flex;
     gap: 30px;
@@ -91,6 +93,13 @@
   &__table {
     overflow: auto;
     width: 50%;
+  }
+
+  &__table-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
   }
 
   &__table-title {
@@ -138,6 +147,34 @@
   & td:last-child {
     font-weight: 600;
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  background-color: $white;
+  width: 15px;
+  height: 3px;
+  border-radius: 5px;
 }
 
 @import "media";

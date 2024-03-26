@@ -27,6 +27,18 @@
       }
     }
   }
+
+  .first-rp {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__table,
+    &__slider {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 720px) {

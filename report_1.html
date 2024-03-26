@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drone for V</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,23 @@
         <section class="first-rp">
             <div class="first-rp__wrapper">
                 <div class="first-rp__slider">
-                    <img class="first-rp__slider-img" src="/static/img/photo_2024-02-25_12-44-21.jpg" alt="slider photo">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="swiper-slide-img" src="/static/img/photo_2024-02-25_12-44-21.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide-img" src="/static/img/photo_2024-02-25_12-44-212.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide-img" src="/static/img/photo_2024-02-25_12-44-21 (2).jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide-img" src="/static/img/photo_2024-02-25_12-44-21 (3).jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
                 <div class="first-rp__table">
                     <h3 class="first-rp__table-title">Перший збір - першого дрона</h3>
@@ -31,7 +48,10 @@
                         Це був перший збір який був закритий колегами відділу, друзями та родичами. 
                         Для мене це ще був перший досвід як підбору комплектуючих так і збірки БПЛА
                     </p>
-                    
+                    <ul class="first-rp__table-list">
+                        <li class="first-rp__table-checkpoint">Збір закрито - <span class="span-w600">16.01.2024</span></li>
+                        <li class="first-rp__table-checkpoint">Дрон пройшов тести і отримано військовими - <span class="span-w600">08.03.2024</span></li>
+                    </ul>
                     <div class="table" role="region" tabindex="0">
                         <table>
                             <caption class="table__caption">Назва і характеристики комплектуючих</caption>
@@ -77,9 +97,14 @@
                     </div>
                 </div>
             </div>
+
         </section>
       </div>
     </main>
     <!-- <footer class="footer"></footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+
   </body>
 </html>

@@ -80,6 +80,10 @@ body {
   text-decoration: underline;
 }
 
+.span-w600 {
+  font-weight: 600;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -152,6 +156,9 @@ body {
   height: auto;
 }
 
+.first-rp {
+  padding: 20px 0;
+}
 .first-rp__wrapper {
   display: flex;
   gap: 30px;
@@ -159,6 +166,12 @@ body {
 .first-rp__table {
   overflow: auto;
   width: 50%;
+}
+.first-rp__table-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
 }
 .first-rp__table-title {
   font-size: 35px;
@@ -196,6 +209,35 @@ body {
   font-weight: 600;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  width: 15px;
+  height: 3px;
+  border-radius: 5px;
+}
+
 @media (max-width: 1020px) {
   .main__wrapper {
     flex-direction: column;
@@ -216,6 +258,13 @@ body {
     width: 100%;
   }
   .main__button-link:hover {
+    width: 100%;
+  }
+  .first-rp__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .first-rp__table, .first-rp__slider {
     width: 100%;
   }
 }
